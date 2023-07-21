@@ -3,7 +3,7 @@ import _ from "lodash"
 
 type ColorHsl = [number, number, number]
 type Palette = Record<number, ColorHsl>
-type Theme = Record<string, Palette>
+type Theme = Record<'primary' | 'secondary' | 'gray' | 'red' | 'yellow' | 'green', Palette>
 
 const PRIMARY_HSL: Palette = {
   "50": [315, 100, 95],

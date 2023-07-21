@@ -1,6 +1,6 @@
 {
   "name": "@tenset-security/colors",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/tenset-security/colors",
@@ -12,7 +12,12 @@
   "description": "Tenset Security brand colors",
   "scripts": {
     "build": "tsx src/index.ts",
-    "format": "prettier . --write && eslint ."
+    "format": "prettier . --write && eslint .",
+    "test:types": "tsc --noEmit",
+    "test:quality": "eslint .",
+    "test:formatting": "prettier .",
+    "test": "npm-run-all test:*",
+    "publish": "np"
   },
   "main": "src/index.ts",
   "engines": {
@@ -29,7 +34,10 @@
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "lodash": "^4.17.21",
+    "np": "^8.0.4",
+    "npm-run-all": "^4.1.5",
     "prettier": "3.0.0",
-    "tsx": "^3.12.7"
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
   }
 }
