@@ -17,7 +17,8 @@
     "test:quality": "eslint .",
     "test:formatting": "prettier .",
     "test": "npm-run-all test:*",
-    "publish": "np"
+    "prepublishOnly": "npm run build",
+    "release": "np"
   },
   "main": "out/index.js",
   "engines": {
