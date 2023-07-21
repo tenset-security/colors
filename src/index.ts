@@ -2,7 +2,7 @@ import convert from "color-convert"
 import _ from "lodash"
 
 type ColorHsl = [number, number, number]
-type Palette = Record<number, ColorHsl>
+type Palette = Record<50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900, ColorHsl>
 type Theme = Record<'primary' | 'secondary' | 'gray' | 'red' | 'yellow' | 'green', Palette>
 
 const PRIMARY_HSL: Palette = {
@@ -68,7 +68,7 @@ const YELLOW_HSL: Palette = {
   "700": [26, 90, 37],
   "800": [23, 83, 31],
   "900": [22, 78, 26],
-  "950": [21, 92, 14],
+  // "950": [21, 92, 14],
 }
 
 const RED_HSL: Palette = {
