@@ -11,7 +11,7 @@
   },
   "description": "Tenset Security brand colors",
   "scripts": {
-    "build": "tsx src/index.ts",
+    "build": "tsc",
     "format": "prettier . --write && eslint .",
     "test:types": "tsc --noEmit",
     "test:quality": "eslint .",
@@ -19,7 +19,7 @@
     "test": "npm-run-all test:*",
     "publish": "np"
   },
-  "main": "src/index.ts",
+  "main": "out/index.js",
   "engines": {
     "node": "18.15.0",
     "npm": "9.5.0"
