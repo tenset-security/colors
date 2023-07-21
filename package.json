@@ -1,0 +1,35 @@
+{
+  "name": "@tenset-security/colors",
+  "version": "1.0.2",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tenset-security/colors",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/tenset-security/colors/issues"
+  },
+  "description": "Tenset Security brand colors",
+  "scripts": {
+    "build": "tsx src/index.ts",
+    "format": "prettier . --write && eslint ."
+  },
+  "main": "src/index.ts",
+  "engines": {
+    "node": "18.15.0",
+    "npm": "9.5.0"
+  },
+  "packageManager": "npm@9.5.0",
+  "devDependencies": {
+    "@types/color-convert": "^2.0.0",
+    "@types/lodash": "^4.14.195",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "color-convert": "^2.0.1",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "lodash": "^4.17.21",
+    "prettier": "3.0.0",
+    "tsx": "^3.12.7"
+  }
+}
