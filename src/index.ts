@@ -85,7 +85,7 @@ const RED_HSL: Palette = {
 }
 
 function convertThemeToHex(theme: Theme) {
-  return _.mapValues(theme, (palette) => _.mapValues(palette, convert.hsl.hex))
+  return _.mapValues(theme, (palette) => _.mapValues(palette, colorHsl => `#${convert.hsl.hex(colorHsl)}`))
 }
 
 const theme: Theme = {
